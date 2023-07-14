@@ -1,0 +1,93 @@
+﻿@page "/"
+
+<div class="row">
+    <div class="col text-center">
+        <h1>Welcome to our Game Industry Page</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col text-center">
+        <h1>Show all games in MOCK Database:</h1>
+    </div>
+</div>
+
+<GameListTable Games="games"/>
+        
+<IndividualGame Game="oneGameToShow" DisplayButtons="true" SwitchGame="ShowNewGame" />
+
+<div class="row">
+    <div class="col-11"></div>
+    <div class="col-1">
+        <a class="justify-content-center" href="https://ru-ru.facebook.com/">
+            <div><RadzenIcon Icon="facebook" /><span></span></div>
+        </a>
+    </div>
+</div>
+
+
+@code{
+    List<Game> games;
+
+    Random rnd;
+    Game oneGameToShow;
+
+    protected async override Task OnInitializedAsync()
+    {
+        await Task.Delay(2000);
+
+        games = new List<Game>()
+        {
+            new Game()
+            {
+                Name = "Farming Simulator 2019",
+                Genre = "Simulator",
+                ReleseDate = new DateTime(2018, 11, 19)
+            },
+
+            new Game()
+            {
+                Name = "The Witcher 3",
+                Genre = "Action/RPG",
+                ReleseDate = new DateTime(2015, 05, 19)
+            },
+
+            new Game()
+            {
+                Name = "Destroy All Humans",
+                Genre = "Action-Adventure",
+                ReleseDate = new DateTime(2020, 07, 28)
+            },
+        };
+
+        rnd = new Random(DateTime.Now.Millisecond);
+        oneGameToShow = games[rnd.Next(0, games.Count)];
+    }
+
+    void ShowNewGame()
+    {
+        oneGameToShow = SwitchGame();
+    }
+
+    Game SwitchGame()
+    {
+        var tempGame = new Game();
+
+        if (games.Count >= 2)
+        {
+            var iterator = rnd.Next(0, games.Count);
+
+            tempGame = games[iterator];
+        }
+        else if (games.Count == 1)
+        {
+            tempGame = games[0];
+        }
+        else
+        {
+            return new Game() { Name = "No items in array", ReleseDate = DateTime.Now };
+        }
+
+        return tempGame;
+    }
+}

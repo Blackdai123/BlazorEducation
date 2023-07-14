@@ -1,0 +1,113 @@
+﻿@page "/gamelist"
+
+
+@if (gameList == null)
+{
+    <h1>Loading....</h1>
+}
+else if (gameList.Count <= 0)
+{
+    <h1>Loading....</h1>
+}
+else
+{
+    var indexator = 0;
+    <OneLineList FirstGame="@gameList[indexator]" SecondGame="@gameList[indexator++]" LastGame="gameList[indexator++]"/>
+    <OneLineList FirstGame="@gameList[indexator++]" SecondGame="@gameList[indexator++]" LastGame="gameList[indexator++]" />
+    <OneLineList FirstGame="@gameList[indexator++]" SecondGame="@gameList[indexator++]" LastGame="gameList[indexator++]" />
+}
+
+
+@code {
+    List<Game> gameList;
+    protected async override Task OnInitializedAsync()
+    {
+        await Task.Delay(2000);
+
+        gameList = new List<Game>()
+        {
+            new Game()
+            {
+                Name = "The Witcher 3",
+                Genre = "Action/RPG",
+                ReleseDate = new DateTime(2015, 05, 19),
+                URLLogo = "https://itorrents-igruha.org/uploads/posts/2022-11/1668378880_cover.jpg",
+                URLGame = "https://itorrents-igruha.org/22-7-42430.html"
+            },
+            new Game()
+            {
+                Name = "Farming Simulator 2019",
+                Genre = "Simulator",
+                ReleseDate = new DateTime(2018, 11, 19),
+                URLLogo = "https://itorrents-igruha.org/uploads/posts/2022-11/1668122862_cover.jpg",
+                URLGame = "https://itorrents-igruha.org/2735-farming-simulator-19-2019-ru.html"
+            },
+             new Game()
+             {
+                Name = "Destroy All Humans",
+                Genre = "Action-Adventure",
+                ReleseDate = new DateTime(2020, 07, 28),
+                URLLogo = "https://itorrents-igruha.org/uploads/posts/2020-07/1595928193__1cover.jpg",
+                URLGame = "https://itorrents-igruha.org/3815-destroy-all-humans.html"
+             },
+             new Game()
+             {
+                Name = "World of Tanks",
+                Genre = "Action, Tank, 3D, Online-only",
+                ReleseDate = new DateTime(2010, 08, 12),
+                URLLogo = "https://itorrents-igruha.org/uploads/posts/2023-02/1677002725_cover.jpg",
+                URLGame = "https://itorrents-igruha.org/778-world-of-tanks.html"
+             },
+             new Game()
+             {
+                Name = "World of Warships",
+                Genre = "Action, Simulator, MMO, 3rd Person",
+                ReleseDate = new DateTime(2015, 09, 17),
+                URLLogo = "https://itorrents-igruha.org/uploads/posts/2023-02/1677002741_cover2.jpg",
+                URLGame = "https://itorrents-igruha.org/72-21-world-of-warships-download.html"
+             },
+              new Game()
+             {
+                Name = "The Witcher 3",
+                Genre = "Action/RPG",
+                ReleseDate = new DateTime(2015, 05, 19),
+                URLLogo = "https://itorrents-igruha.org/uploads/posts/2022-11/1668378880_cover.jpg",
+                URLGame = "https://itorrents-igruha.org/22-7-42430.html"
+             },
+             new Game()
+             {
+                Name = "Farming Simulator 2019",
+                Genre = "Simulator",
+                ReleseDate = new DateTime(2018, 11, 19),
+                URLLogo = "https://itorrents-igruha.org/uploads/posts/2022-11/1668122862_cover.jpg",
+                URLGame = "https://itorrents-igruha.org/2735-farming-simulator-19-2019-ru.html"
+             },
+             new Game()
+             {
+                Name = "Destroy All Humans",
+                Genre = "Action-Adventure",
+                ReleseDate = new DateTime(2020, 07, 28),
+                URLLogo = "https://itorrents-igruha.org/uploads/posts/2020-07/1595928193__1cover.jpg",
+                URLGame = "https://itorrents-igruha.org/3815-destroy-all-humans.html"
+             },
+             new Game()
+             {
+                Name = "World of Tanks",
+                Genre = "Action, Tank, 3D, Online-only",
+                ReleseDate = new DateTime(2010, 08, 12),
+                URLLogo = "https://itorrents-igruha.org/uploads/posts/2023-02/1677002725_cover.jpg",
+                URLGame = "https://itorrents-igruha.org/778-world-of-tanks.html"
+             },
+             new Game()
+             {
+                Name = "World of Warships",
+                Genre = "Action, Simulator, MMO, 3rd Person",
+                ReleseDate = new DateTime(2015, 09, 17),
+                URLLogo = "https://itorrents-igruha.org/uploads/posts/2023-02/1677002741_cover2.jpg",
+                URLGame = "https://itorrents-igruha.org/72-21-world-of-warships-download.html"
+             }
+        };
+         
+    }
+
+}

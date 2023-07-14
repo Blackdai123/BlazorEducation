@@ -1,0 +1,52 @@
+﻿@typeparam TItem
+
+@if (ListOfItems == null)
+{
+    @if (NullList != null)
+    {
+        <tr>@NullList</tr>
+    }
+    else
+    {
+        <div class="row">
+            <div class="col-4" />
+            <div class="col-4">
+                 <img src="https://miro.medium.com/v2/resize:fit:1400/1*CsJ05WEGfunYMLGfsT2sXA.gif" height="200" />
+            </div>
+            <div class="col-4" />
+        </div>
+    }
+}
+else if (ListOfItems.Count == 0)
+{
+    if (EmptyList != null)
+    {
+        <tr>@EmptyList</tr>
+    }
+    else
+    {
+        <div class="row">
+            <div class="col-4" />
+            <div class="col-4">
+                <img src="https://media.tenor.com/Y3c23UQQ3MIAAAAC/empty-box.gif" height="200" />
+            </div>
+            <div class="col-4" />
+        </div>
+    }
+}
+else
+{
+    @foreach (var item in ListOfItems)
+    {
+        @ItemTemplate(item);
+    }
+}
+
+@code {
+    [Parameter] public RenderFragment NullList { get; set; }
+    [Parameter] public RenderFragment EmptyList { get; set; }
+
+    [Parameter] public RenderFragment<TItem> ItemTemplate{ get; set; }
+
+    [Parameter] public List<TItem> ListOfItems { get; set; }
+}

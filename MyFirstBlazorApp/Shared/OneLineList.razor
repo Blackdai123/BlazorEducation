@@ -1,0 +1,46 @@
+﻿@if (LastGame != null)
+{
+<div class="row">
+    <div class="col-4">
+        <GameCard Game="FirstGame"/>
+    </div>
+    <div class="col-4">
+        <GameCard Game="SecondGame"/>
+    </div>
+    <div class="col-4">
+        <GameCard Game="LastGame" />
+    </div>
+</div>
+}
+else if (SecondGame != null)
+{
+ <div class="row">
+    <div class="col-4">
+        <GameCard Game="FirstGame"/>
+    </div>
+    <div class="col-4">
+        <GameCard Game="SecondGame"/>
+    </div>
+    <div class="col-4"/>
+ </div>
+}
+else if (FirstGame != null)
+{
+    <div class="row">
+        <div class="col-4">
+            <GameCard Game="FirstGame" />
+        </div>
+    </div>
+}
+else
+{
+    <h1>Server errors!!!!!!!!!!!</h1>
+}
+
+
+@code {
+
+    [Parameter] public Game FirstGame { get; set; } = null;
+    [Parameter] public Game SecondGame { get; set; } = null;
+    [Parameter] public Game LastGame { get; set; } = null;
+}

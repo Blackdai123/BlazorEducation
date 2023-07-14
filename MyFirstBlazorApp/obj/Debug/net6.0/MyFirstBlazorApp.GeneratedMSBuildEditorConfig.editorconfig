@@ -1,0 +1,81 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MyFirstBlazorApp
+build_property.RootNamespace = MyFirstBlazorApp
+build_property.ProjectDir = C:\GitRep\BlazorEducation\MyFirstBlazorApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\GitRep\BlazorEducation\MyFirstBlazorApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/GitRep/BlazorEducation/MyFirstBlazorApp/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitRep/BlazorEducation/MyFirstBlazorApp/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitRep/BlazorEducation/MyFirstBlazorApp/Pages/GameList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FtZUxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitRep/BlazorEducation/MyFirstBlazorApp/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitRep/BlazorEducation/MyFirstBlazorApp/Shared/GameCard.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEdhbWVDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitRep/BlazorEducation/MyFirstBlazorApp/Shared/GameListTable.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEdhbWVMaXN0VGFibGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitRep/BlazorEducation/MyFirstBlazorApp/Shared/GenericList.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEdlbmVyaWNMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitRep/BlazorEducation/MyFirstBlazorApp/Shared/IndividualGame.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEluZGl2aWR1YWxHYW1lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitRep/BlazorEducation/MyFirstBlazorApp/Shared/OneLineList.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE9uZUxpbmVMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitRep/BlazorEducation/MyFirstBlazorApp/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitRep/BlazorEducation/MyFirstBlazorApp/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitRep/BlazorEducation/MyFirstBlazorApp/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-wo09l74797
+
+[C:/GitRep/BlazorEducation/MyFirstBlazorApp/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-dt9xyq864d
+
+[C:/GitRep/BlazorEducation/MyFirstBlazorApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitRep/BlazorEducation/MyFirstBlazorApp/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitRep/BlazorEducation/MyFirstBlazorApp/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
